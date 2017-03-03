@@ -1,8 +1,4 @@
-برای یادگیری و آموزش ساخت ربات ضد اسپم تلگرام  به سایت پرمگ مراجعه کنید 
-http://permag.ir
-
-کانال ما
-@permag_ir
-
-کانال ربات های ما 
-@permag_bots
+# haji_riot
+as a Anti spam telegram-cli
+## developers
+[Alit7005](https://telegram.me/alit7005)
