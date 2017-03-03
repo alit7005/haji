@@ -1,7 +1,7 @@
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
 feedparser = (loadfile "./libs/feedparser.lua")()
-our_id = 123456789 -- Put Here Your Bot ID
+our_id = 338629694 -- Put Here Your Bot ID
 URL = require "socket.url"
 http = require "socket.http"
 https = require "ssl.https"
@@ -90,23 +90,22 @@ function create_config( )
 	"lock-fosh"
 	
  },
-    sudo_users = {123456789},
+    sudo_users = {178677682,341771849},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》permag.ir v3
+    info_text = [[》haji_riot v3
+		
+🔰Our sudo1 :
+》@omid_dd3《
 
-🔰Our channel :
-》@permag_bots《
+🔰Our sudo2 :
+》@alit7005《
 
-🔰Our channel2 :
-》@permag_ir《
+🔰Our sudo3 :
+》@alit7005_bot《
 
-🔰Our channel3 :
-》@permag《
-
-🔰Our website :
-》http://permag.ir
+🔰
 ]],
   }
   serialize_to_file(config, './data/config.lua')
@@ -894,7 +893,7 @@ elseif msg.content_.ID == "MessageGame" then
   end
 
 end
--- http://permag.ir
--- @permag_ir
--- @permag_bots
--- @permag
+-- sudo bot
+-- @Omid_dd3
+-- @alit7005
+-- @Alit7005_bot
