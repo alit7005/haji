@@ -14,12 +14,12 @@ local function pre_process(msg)
 	end
 	if tonumber(timetoexpire) == 0 then
 		if redis:hget('expires0',msg.chat_id_) then end
-		tdcli.sendMessage(msg.chat_id_, 0, 1, '*⚠️مدت استفاده ربات شما تمام شده است لطفا آن را تمدید کنید*.', 1, 'md')
+		tdcli.sendMessage(msg.chat_id_, 0, 1, '*⚠️مدت استفاده ربات شما تمام شده است لطفا برای تمدید به آیدی @alit7005 یا @alit7005_bot یا @omid_dd3 پیام دهید *.', 1, 'md')
 		redis:hset('expires0',msg.chat_id_,'5')
 	end
 	if tonumber(timetoexpire) == 1 then
 		if redis:hget('expires1',msg.chat_id_) then end
-		tdcli.sendMessage(msg.chat_id_, 0, 1, '*⚠️ ⚠️ فقط 1⃣ روز  تا پایان مدت استفاده از ربات باقی مانده است لطفا آن را تمدید کنید.*.', 1, 'md')
+		tdcli.sendMessage(msg.chat_id_, 0, 1, '*⚠️ ⚠️ فقط 1⃣ روز  تا پایان مدت استفاده از ربات باقی مانده است لطفا برای تمدید به ایدی های @alit7005 یا @alit7005_bot یا @omid_dd3 پیام دهید.*.', 1, 'md')
 		redis:hset('expires1',msg.chat_id_,'5')
 	end
 
@@ -52,6 +52,3 @@ return {
   run = run,
   pre_process = pre_process
 }
--- http://permag.ir
--- @permag_ir
--- @permag_bots
