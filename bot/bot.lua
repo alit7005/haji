@@ -90,14 +90,14 @@ function create_config( )
 	"lock-fosh"
 	
  },
-    sudo_users = {178677682,341771849,147786122},
+    sudo_users = {365910979,359168877},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
     info_text = [[》haji_riot v3
 		
 🔰Our sudo1 :
-》@omid_dd3《
+》@erfan_1360《
 
 🔰Our sudo2 :
 》@alit7005《
