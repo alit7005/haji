@@ -1,16 +1,20 @@
+package.path = package.path..';.luarocks/share/lua/5.2/?.lua;.luarocks/share/lua/5.2/?/init.lua'
+package.cpath = package.cpath..';.luarocks/lib/lua/5.2/?.so'
+
 tdcli = dofile('./tg/tdcli.lua')
-serpent = (loadfile "./libs/serpent.lua")()
-feedparser = (loadfile "./libs/feedparser.lua")()
-our_id = 338629694 -- Put Here Your Bot ID
+serpent = require'serpent'
+feedparser = require'feedparser'
+our_id = 180191663 -- Put Here Your Bot ID
 URL = require "socket.url"
 http = require "socket.http"
 https = require "ssl.https"
 ltn12 = require "ltn12"
 
-json = (loadfile "./libs/JSON.lua")()
-mimetype = (loadfile "./libs/mimetype.lua")()
-redis = (loadfile "./libs/redis.lua")()
-JSON = (loadfile "./libs/dkjson.lua")()
+json = require'json'
+mimetype = require'mimetype'
+redis = require('redis')
+redis = redis.connect('127.0.0.1', 6379)
+JSON = require'JSON'
 local lgi = require ('lgi')
 
 local notify = lgi.require('Notify')
@@ -90,7 +94,7 @@ function create_config( )
 	"lock-fosh"
 	
  },
-    sudo_users = {365910979,359168877},
+    sudo_users = {180191663},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
