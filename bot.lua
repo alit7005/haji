@@ -11,7 +11,6 @@ https = require "ssl.https"
 ltn12 = require "ltn12"
 
 json = require'dkjson'
-mimetype = require'mimetype'
 redis = require('redis')
 redis = redis.connect('127.0.0.1', 6379)
 JSON = require'dkjson'
