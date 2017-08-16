@@ -97,15 +97,6 @@ if [ "$1" = "install" ]; then
 install
 fi
 
-if [ "$1" = "bot" ]; then
-COUNTER=0
-  while [ $COUNTER -lt 5 ]; do
-       tmux kill-session -t script
-           tmux new-session -s script "./telegram-cli -s bot.lua"
-        tmux detach -s script
-    sleep 1
-  done
-fi
 
 if [ ! -f telegram-cli ]; then
     echo -e "\033[38;5;208mError! telegram-cli not found, Please reply to this message:\033[1;208m"
