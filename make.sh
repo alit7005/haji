@@ -103,6 +103,7 @@ if [ ! -f telegram-cli ]; then
     read -p "Do you want to install and config? [y/n] = "
 	if [ "$REPLY" == "y" ] || [ "$REPLY" == "Y" ]; then
 	chmod 777 make.sh
+	chmod 777 r.sh
         install
     elif [ "$REPLY" == "n" ] || [ "$REPLY" == "N" ]; then
         exit 1
