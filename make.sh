@@ -18,8 +18,6 @@ printf "\e[38;5;213m\t"
 printf "\n"
 }
 
- }
-
 install_luarocks() {
  echo -e "\e[38;5;142mInstalling LuaRocks\e"
   git clone https://github.com/keplerproject/luarocks.git
