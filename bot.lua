@@ -626,11 +626,10 @@ else
 function msg_valid(msg)
   if msg.date_ < os.time() - 60 then
     print('\27[36mOld msg\27[39m')
-    return false
-  end
-  return true
+    return true
+  else
+ return false
 end
-
 function match_pattern(pattern, text, lower_case)
   if text then
     local matches = {}
